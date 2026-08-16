@@ -5,6 +5,7 @@ import '../../features/auth/presentation/screens/splash_screen.dart';
 import '../../features/auth/presentation/screens/login_screen.dart';
 import '../../features/auth/presentation/screens/registro_screen.dart';
 import '../../features/auth/presentation/screens/vincular_reloj_screen.dart';
+import '../../features/auth/presentation/screens/vincular_tv_screen.dart';
 import '../../features/tandas/presentation/screens/home_screen.dart';
 import '../../features/tandas/presentation/screens/crear_tanda_screen.dart';
 import '../../features/tandas/presentation/screens/editar_tanda_screen.dart';
@@ -35,6 +36,10 @@ final appRouter = GoRouter(
     GoRoute(
       path: '/vincular-reloj',
       builder: (context, state) => const VincularRelojScreen(),
+    ),
+    GoRoute(
+      path: '/vincular-tv',
+      builder: (context, state) => const VincularTvScreen(),
     ),
     GoRoute(
       path: '/tandas/crear',

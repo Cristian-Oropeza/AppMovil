@@ -76,6 +76,11 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
             onPressed: () => context.push('/vincular-reloj'),
           ),
           IconButton(
+            icon: const Icon(Icons.tv_outlined),
+            tooltip: 'Vincular TV',
+            onPressed: () => context.push('/vincular-tv'),
+          ),
+          IconButton(
             icon: const Icon(Icons.logout),
             tooltip: 'Cerrar sesión',
             onPressed: _confirmarCerrarSesion,
